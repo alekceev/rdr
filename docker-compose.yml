@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  rdr:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: rdr:latest
+    restart: always
+    environment:
+      PORT: 8081
+      READ_TIMEOUT: 30
+      WRITE_TIMEOUT: 30
+      READ_HEADER_TIMEOUT: 30
+    ports:
+      - 8081:8081
