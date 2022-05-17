@@ -10,7 +10,7 @@ linters:
   enable:
   - gofmt
   - goimports
-  - govet
+  # - govet
   - goconst
   - funlen
   - bodyclose

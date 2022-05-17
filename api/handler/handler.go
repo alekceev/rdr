@@ -2,7 +2,6 @@ package handler
 
 import (
 	"context"
-	"net/url"
 )
 
 type Handlers struct {
@@ -13,7 +12,7 @@ func NewHandlers() *Handlers {
 	return r
 }
 
-func (rt *Handlers) Admin(ctx context.Context, url url.URL) error {
+func (rt *Handlers) Admin(ctx context.Context) error {
 	// TODO
 	return nil
 }
