@@ -1,7 +1,7 @@
 USERNAME := alekseevdenis
 APP_NAME := rdr
 VERSION := latest
-PROJECT := github.com/alekceev/rdr
+PROJECT := rdr
 GIT_COMMIT := $(shell git rev-parse HEAD)
 
 check:

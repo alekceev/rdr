@@ -63,8 +63,7 @@ func (rt *Router) Goto(c *gin.Context) {
 	// log.Println("Host: ", ur.Host, string(jj))
 
 	if ur.Host == "" {
-		// c.JSON(http.StatusNotFound, gin.H{"error": true, "message": "Page not found"})
-		c.AbortWithError(http.StatusNotFound, fmt.Errorf("Page not found"))
+		c.JSON(http.StatusNotFound, gin.H{"error": true, "message": "Page not found"})
 	}
 
 	log.Println(c.ClientIP(), " => ", ur.String())
